@@ -4,6 +4,7 @@ import Category from "@/components/category-component.vue";
 
 <template>
   <header>
+      {{$t('greet',{ user:'Carlos'})}}
   </header>
 
   <main>

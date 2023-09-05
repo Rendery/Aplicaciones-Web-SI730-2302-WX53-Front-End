@@ -2,19 +2,22 @@ import { createI18n } from "vue-i18n";
 
 
 const i18n = createI18n({
-    locale: 'fr',
+    locale: 'es',
     messages: {
         en: {
             "category":'category ',
-            "tutorial":'turorial'
+            "tutorial":'turorial',
+            "greet":'Hello, {user}'
         },
         es:{
             "category":'Categoría',
-            "tutorial":'tutorial es'
+            "tutorial":'tutorial es',
+            "greet":'Hola, {user}'
         },
         fr:{
             "category" :'Catégorie',
-            "tutorial":'Didacticiel'
+            "tutorial":'Didacticiel',
+            "greet":'Salut, {user}'
         }
     }
 })
