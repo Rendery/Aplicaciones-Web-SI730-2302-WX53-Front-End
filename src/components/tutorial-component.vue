@@ -2,8 +2,12 @@
     <label class="title">{{$t('tutorial')}}  {{title}}</label>
     <div class="form-container">
         <div class="control">
-            <label >Description :</label>
-            <input type="text" >
+            <label  for="description">Description :</label>
+            <input type="text" id="description">
+        </div>
+        <div class="control">
+            <label for="shortname" >Short name :</label>
+            <input type="text" id="shortname" aria-label="Ingrese o nombre corto" >
         </div>
         <div class="control">
             <label>Count :</label>
@@ -13,6 +17,8 @@
             <label>Date :</label>
             <input type="date">
         </div>
+        <img src="cat.jpg" alt="cat">
+        <a href="google.com"  aria-label="click para pasar a x pagina" >siguiente </a>
         <button>Save</button>
     </div>
 
