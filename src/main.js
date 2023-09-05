@@ -9,13 +9,16 @@ const i18n = createI18n({
     locale: 'fr',
     message: {
         en: {
-            "category":'category'
+            "category":'category ',
+            "tutorial":'turorial'
         },
         es:{
-            "category":'Categoría'
+            "category":'Categoría',
+            "tutorial":'tutorial es'
         },
         fr:{
-            "category" :'Catégorie'
+            "category" :'Catégorie',
+            "tutorial":'Didacticiel'
         }
     }
 })

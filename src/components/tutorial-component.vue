@@ -1,5 +1,5 @@
 <template>
-    <label class="title">{{title}}</label>
+    <label class="title">{{$t('tutorial')}} {{title}}</label>
 </template>
 
 <script>
