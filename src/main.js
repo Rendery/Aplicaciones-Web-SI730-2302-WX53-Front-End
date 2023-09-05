@@ -7,7 +7,7 @@ import { createI18n } from "vue-i18n";
 
 const i18n = createI18n({
     locale: 'fr',
-    message: {
+    messages: {
         en: {
             "category":'category ',
             "tutorial":'turorial'
