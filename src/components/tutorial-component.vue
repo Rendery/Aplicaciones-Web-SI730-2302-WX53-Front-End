@@ -7,7 +7,7 @@
         </div>
         <div class="control">
             <label for="shortname" >Short name :</label>
-            <input type="text" id="shortname" aria-label="Ingrese o nombre corto" >
+            <pv-inputText type="text" id="shortname" aria-label="Ingrese o nombre corto" />
         </div>
         <div class="control">
             <label>Count :</label>
@@ -17,9 +17,11 @@
             <label>Date :</label>
             <input type="date">
         </div>
+        <pv-dropdown optionLabel="name" placeholder="Select a City" class="w-full md:w-14rem" />
+
         <img src="cat.jpg" alt="cat">
         <a href="google.com"  aria-label="click para pasar a x pagina" >siguiente </a>
-        <button>Save</button>
+        <pv-button>Save</pv-button>
     </div>
 
 </template>
