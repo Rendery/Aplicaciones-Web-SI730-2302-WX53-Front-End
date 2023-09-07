@@ -4,14 +4,30 @@ import Category from "@/components/category-component.vue";
 
 <template>
   <header>
-      {{$t('greet',{ user:'Carlos'})}}
+    {{ $t("greet", { user: "Carlos" }) }}
   </header>
 
   <main>
-      <category name="Math" content="This course you'll learn math" :tutorials="[{title:'Calculate 1'},{title:'Calculate 12'}]"/>
-      <category name="Literature" content="Literature" :tutorials="[{title:'Spanish'},{title:'English'}]" />
-      <category name="Biology" content="molecule structure" :tutorials="[{title:'Macromolecules'},{title:'Organic compounds'}]" />
-      <category name="Psychology" content="the scientific study of the mind and behavior" :tutorials="[{title:'Behaviorist'},{title:'Behaviorist'}]"/>
+    <category
+      :tutorials="[{ title: 'Calculate 1' }, { title: 'Calculate 12' }]"
+      content="This course you'll learn math"
+      name="Math"
+    />
+    <category
+      :tutorials="[{ title: 'Spanish' }, { title: 'English' }]"
+      content="Literature"
+      name="Literature"
+    />
+    <category
+      :tutorials="[{ title: 'Macromolecules' }, { title: 'Organic compounds' }]"
+      content="molecule structure"
+      name="Biology"
+    />
+    <category
+      :tutorials="[{ title: 'Behaviorist' }, { title: 'Behaviorist' }]"
+      content="the scientific study of the mind and behavior"
+      name="Psychology"
+    />
   </main>
 </template>
 
@@ -19,5 +35,4 @@ import Category from "@/components/category-component.vue";
 header {
   line-height: 1.5;
 }
-
 </style>
