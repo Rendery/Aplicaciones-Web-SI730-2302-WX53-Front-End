@@ -1,26 +1,38 @@
 <template>
   <label class="title">{{ $t("tutorial") }} {{ title }}</label>
-  <div class="form-container">
-    <label for="description">Description :</label>
-    <input id="description" type="text" />
-    <label for="shortname">Short name :</label>
-    <pv-inputText
-      id="shortname"
-      aria-label="Ingrese o nombre corto"
-      type="text"
-    />
-    <label>Count :</label>
-    <input type="number" />
-    <label>Date :</label>
-    <input type="date" />
-    <pv-dropdown
-      class="w-full md:w-14rem"
-      optionLabel="name"
-      placeholder="Select a City"
-    />
+  <div class="flex flex-column lg:flex-row">
+    <div class="flex">
+      <label for="description">Description :</label>
+      <input id="description" type="text" />
+    </div>
+    <div class="flex">
+      <label for="shortname">Short name :</label>
+      <pv-inputText
+        id="shortname"
+        aria-label="Ingrese o nombre corto"
+        type="text"
+      />
+    </div>
 
+    <div class="flex">
+      <label>Count :</label>
+      <input type="number" />
+    </div>
+
+    <div class="row">
+      <label>Date :</label>
+      <input type="date" />
+    </div>
+    <div class="row">
+      <label>City</label>
+      <pv-dropdown
+        class="w-full md:w-14rem"
+        optionLabel="name"
+        placeholder="Select a City"
+      />
+    </div>
     <img alt="cat" class="logo" src="../assets/logo.svg" />
-    <pv-button aria-label="click para pasar a x pagina" link>Cancel </pv-button>
+    <pv-button aria-label="click para pasar a x pagina" link>Cancel</pv-button>
     <pv-button>Save</pv-button>
   </div>
 </template>
@@ -45,13 +57,14 @@ export default {
 }
 
 .form-container {
-  gap: 4px;
-  margin: 8px;
+  /* display: flex;
+                           flex-direction: column;*/
+  gap: 10px;
 }
 
 .control {
-  display: flex;
-  flex-direction: row;
+  /*display: flex;
+                        flex-direction: row; */
   gap: 4px;
 }
 
