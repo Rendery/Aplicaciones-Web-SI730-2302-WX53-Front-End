@@ -1,21 +1,24 @@
 <template>
   <ul v-for="user in users">
-    <li>{{ user.name }}</li>
+    <li>{{ user.id + " - " + user.name }}</li>
   </ul>
 </template>
 
 <script>
+import { UserApiService } from "@/services/user-api.service";
+
 export default {
   name: "user-list-component",
   data() {
     return {
       users: [],
+      userService: new UserApiService(),
     };
   },
   mounted() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((json) => (this.users = json));
+    this.userService.getAll().then((response) => {
+      this.users = response.data;
+    });
   },
 };
 </script>
