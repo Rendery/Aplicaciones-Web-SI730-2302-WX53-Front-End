@@ -7,8 +7,8 @@
 
   <nav>
     <router-link to="/">Home</router-link>
+    <router-link to="/users">User</router-link>
     <router-link to="/category">Category</router-link>
-    <router-link to="/tutorial">Tutorial</router-link>
   </nav>
   <main>
     <router-view></router-view>
