@@ -1,6 +1,6 @@
 <template>
   <label class="title">{{ $t("tutorial") }} {{ title }}</label>
-  <div class="flex flex-column lg:flex-row">
+  <div class="flex flex-column lg:flex-column">
     <div class="flex">
       <label for="description">Description :</label>
       <input id="description" type="text" />
@@ -58,13 +58,13 @@ export default {
 
 .form-container {
   /* display: flex;
-                           flex-direction: column;*/
+                             flex-direction: column;*/
   gap: 10px;
 }
 
 .control {
   /*display: flex;
-                        flex-direction: row; */
+                          flex-direction: row; */
   gap: 4px;
 }
 

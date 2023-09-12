@@ -1,33 +1,17 @@
-<script setup>
-import Category from "@/components/category-component.vue";
-</script>
+<script setup></script>
 
 <template>
   <header>
     {{ $t("greet", { user: "Carlos" }) }}
   </header>
 
+  <nav>
+    <router-link to="/">Home</router-link>
+    <router-link to="/category">Category</router-link>
+    <router-link to="/tutorial">Tutorial</router-link>
+  </nav>
   <main>
-    <category
-      :tutorials="[{ title: 'Calculate 1' }, { title: 'Calculate 12' }]"
-      content="This course you'll learn math"
-      name="Math"
-    />
-    <category
-      :tutorials="[{ title: 'Spanish' }, { title: 'English' }]"
-      content="Literature"
-      name="Literature"
-    />
-    <category
-      :tutorials="[{ title: 'Macromolecules' }, { title: 'Organic compounds' }]"
-      content="molecule structure"
-      name="Biology"
-    />
-    <category
-      :tutorials="[{ title: 'Behaviorist' }, { title: 'Behaviorist' }]"
-      content="the scientific study of the mind and behavior"
-      name="Psychology"
-    />
+    <router-view></router-view>
   </main>
 </template>
 
