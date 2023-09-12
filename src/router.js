@@ -1,4 +1,4 @@
-import HomeComponent from "@/components/Home-component.vue";
+import HomeComponent from "@/components/home-component.vue";
 import CategoryComponent from "@/components/category-component.vue";
 import TutorialComponent from "@/components/tutorial-component.vue";
 import notFounfComponent from "@/components/not-founf-component.vue";

@@ -17,6 +17,6 @@ app.use(PrimeVue);
 app.use(router);
 
 app.component("pv-button", Button);
-app.component("pv-inputText", InputText);
+app.component("pv-input-text", InputText);
 app.component("pv-dropdown", Dropdown);
 app.mount("#app");
