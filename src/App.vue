@@ -1,15 +1,6 @@
 <script setup></script>
 
 <template>
-  <header>
-    {{ $t("greet", { user: "Carlos" }) }}
-  </header>
-
-  <nav>
-    <router-link to="/">Home</router-link>
-    <router-link to="/users">User</router-link>
-    <router-link to="/category">Category</router-link>
-  </nav>
   <main>
     <router-view></router-view>
   </main>
