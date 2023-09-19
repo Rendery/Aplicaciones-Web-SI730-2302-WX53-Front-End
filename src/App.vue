@@ -19,4 +19,11 @@
 header {
   line-height: 1.5;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
 </style>

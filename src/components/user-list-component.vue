@@ -1,4 +1,5 @@
 <template>
+  <router-link to="/create-user">Crear usuario</router-link>
   <div>
     <label>start</label>
     <pv-input-text v-model="start" type="number" />
@@ -8,6 +9,9 @@
   </div>
   <ul v-for="user in users">
     <li>{{ user.id + " - " + user.name }}</li>
+    <router-link :to="{ name: 'updateUser', params: { id: user.id } }"
+      >Edit</router-link
+    >
   </ul>
 </template>
 
