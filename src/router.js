@@ -6,9 +6,11 @@ import { createRouter, createWebHistory } from "vue-router";
 import UserListComponent from "@/components/user-list-component.vue";
 import CreateUserComponent from "@/components/create-user.component.vue";
 import UpdateUser from "@/components/update-user.vue";
+import LoginComponent from "@/components/login.component.vue";
 
 const routes = [
-  { path: "/", component: HomeComponent },
+  { path: "/", component: LoginComponent },
+  { path: "/home", component: HomeComponent },
   { path: "/category", component: CategoryComponent },
   { path: "/tutorial", component: TutorialComponent },
   { path: "/users", component: UserListComponent },
